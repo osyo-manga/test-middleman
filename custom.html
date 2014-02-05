@@ -3,9 +3,9 @@
     <title>
       test
     </title>
-    <link href='stylesheets/bootstrap.min.css' rel='stylesheet'>
-    <link href='stylesheets/bootstrap-responsive.min.css' rel='stylesheet'>
-    <link href='stylesheets/bootstrap-arrows.css' rel='stylesheet'>
+    <link href='//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css/bootstrap-responsive.min.css' rel='stylesheet'>
+    <link href='components/bootstrap-arrows/css/bootstrap-arrows.css' rel='stylesheet'>
     <meta charset='utf-8'>
     <meta content='IE=edge' http-equiv='X-UA-Compatible'>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
@@ -16,9 +16,17 @@
       <h1>
         Hello World
       </h1>
+      <span class='arrow-inverse' data-angle='270'></span>
       <img class='img-circle' src='http://placehold.it/300'>
       <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
-      <script src='javascripts/bootstrap.min.js'></script>
+      <script src='//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js'></script>
+      <script src='components/bootstrap-arrows/js/bootstrap-arrows.js'></script>
+      <script>
+        $(function () {
+        // Bootstrap Arrows
+        $('.arrow, [class^=arrow-]').bootstrapArrows();
+        });
+      </script>
     </body>
   </head>
 </html>
