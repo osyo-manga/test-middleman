@@ -3,9 +3,9 @@
   %head
     %title
       test
-    %link(rel='stylesheet' href='stylesheets/bootstrap.min.css')
-    %link(rel='stylesheet' href='stylesheets/bootstrap-responsive.min.css')
-    %link(rel='stylesheet' href='stylesheets/bootstrap-arrows.css')
+    %link(rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css')
+    %link(rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css/bootstrap-responsive.min.css')
+    %link(rel='stylesheet' href='components/bootstrap-arrows/css/bootstrap-arrows.css')
 
     %meta{:charset => "utf-8"}/
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
@@ -14,6 +14,12 @@
     %body
       = yield
       %script{:src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'}
-      %script{:src => 'javascripts/bootstrap.min.js'}
+      %script{:src => '//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js'}
+      %script{:src => 'components/bootstrap-arrows/js/bootstrap-arrows.js'}
+      :javascript
+        $(function () {
+        // Bootstrap Arrows
+        $('.arrow, [class^=arrow-]').bootstrapArrows();
+        });
 
 
