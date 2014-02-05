@@ -1,0 +1,59 @@
+---
+title: Hello World
+---
+
+-# - images = ["http://placehold.it/300", "http://placehold.it/300"]
+-#
+-# #myCarousel.carousel.slide
+-#   .carousel-inner
+-#     .item.active
+-#       .text-center
+-#         %img{:alt => "", :src => images[0]}/
+-#       .carousel-caption
+-#     - images.drop(1).each do |image|
+-#       .item
+-#         .text-center
+-#           %img{:alt => "", :src => image}/
+-#         .carousel-caption
+-#   %a.left.carousel-control{"data-slide" => "prev", :href => "#myCarousel"}
+-#     %span.arrow-inverse{ "data-angle" => "270" }
+-#   %a.right.carousel-control{"data-slide" => "next", :href => "#myCarousel"}
+-#     %span.arrow-inverse{ "data-angle" => "90" }
+
+
+
+%h1
+  =current_page.data.title
+
+
+%h1
+  =data.people.test
+-# %h1
+-#   =$data
+
+
+
+
+
+-# %h1 vimmer
+-# %ol
+-#   <% data.people.vimmer.each do |f| %>
+-#   %li <%= f %>
+-#   <% end %>
+
+%img{ :src => "http://placehold.it/300", :class => "img-circle" }
+
+
+
+-# %h1 Hello world
+-#
+-#
+-# %input{:type => "text", :name => "name", :placeholder => "input you name..."}
+-#
+-# %button.btn.btn-default.navbar-btn{:type => "button"} Sign in
+-# %form.navbar-form.navbar-left{:role => "search"}
+-# 	.form-group
+-# 		%input.form-control{:placeholder => "Search", :type => "text"}/
+-# 	%button.btn.btn-default{:type => "submit"} Submit
+-#
+
